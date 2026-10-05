@@ -10,11 +10,11 @@
   --text-light: #94A3B8;
   --border: #E2E8F0;
   
-  /* Bright gradients and accents */
-  --accent: #4F46E5; /* Indigo */
-  --accent-alt: #EC4899; /* Pink */
-  --accent-cyan: #06B6D4;
-  --accent-hover: #4338CA;
+  /* Monochromatic accents (No blue) */
+  --accent: #111111; 
+  --accent-alt: #333333; 
+  --accent-cyan: #555555;
+  --accent-hover: #F97316;
   
   --radius-sm: 6px;
   --radius-md: 12px;
@@ -197,9 +197,9 @@ p {
 
 .section-header .line {
   flex-grow: 1;
-  height: 2px;
-  background: linear-gradient(90deg, var(--accent) 0%, transparent 100%);
-  opacity: 0.5;
+  height: 1px;
+  background: #111111;
+  opacity: 0.2;
 }
 
 /* ===== HERO SECTION ===== */
@@ -263,23 +263,7 @@ p {
   aspect-ratio: 3/4;
 }
 
-.image-wrapper::after {
-  content: '';
-  position: absolute;
-  bottom: -20px;
-  right: -20px;
-  width: 100%;
-  height: 100%;
-  border: 2px solid var(--accent);
-  border-radius: var(--radius-md);
-  z-index: -1;
-  transition: var(--transition);
-}
 
-.image-wrapper:hover::after {
-  transform: translate(10px, 10px);
-  background-color: rgba(79, 70, 229, 0.05);
-}
 
 .profile-photo {
   width: 100%;
@@ -357,7 +341,7 @@ p {
 
 .timeline-item:hover {
   box-shadow: var(--shadow-md);
-  border-color: var(--accent);
+  border-color: #F97316;
   transform: translateY(-2px);
 }
 
@@ -403,7 +387,7 @@ p {
 
 .bento-card:hover {
   box-shadow: var(--shadow-md);
-  border-color: var(--accent);
+  border-color: #F97316;
   transform: translateY(-4px);
 }
 
@@ -431,7 +415,7 @@ p {
 }
 
 .tags span:hover {
-  background: var(--accent);
+  background: #F97316;
   color: #fff;
 }
 
@@ -463,8 +447,8 @@ p {
 }
 
 .interest-pill:hover {
-  border-color: var(--accent-alt);
-  color: var(--accent-alt);
+  border-color: #F97316;
+  color: #F97316;
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
 }
@@ -524,13 +508,13 @@ p {
 }
 
 .contact-link:hover {
-  border-color: var(--accent);
+  border-color: #F97316;
   box-shadow: var(--shadow-md);
   transform: translateY(-4px);
 }
 
 .contact-link:hover i {
-  color: var(--accent-hover);
+  color: #F97316;
   transform: scale(1.1);
 }
 
