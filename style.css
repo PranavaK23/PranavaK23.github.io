@@ -91,9 +91,7 @@ p {
   font-size: 1.25rem;
   font-weight: 700;
   letter-spacing: -0.5px;
-  background: linear-gradient(135deg, var(--accent), var(--accent-alt));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--text-main);
 }
 
 .nav-links {
@@ -109,7 +107,7 @@ p {
 }
 
 .nav-links a:hover {
-  color: var(--accent);
+  color: #F97316;
 }
 
 .btn-nav {
@@ -121,9 +119,9 @@ p {
 }
 
 .btn-nav:hover {
-  background: var(--accent);
+  background: #F97316;
   color: #fff;
-  border-color: var(--accent);
+  border-color: #F97316;
 }
 
 /* ===== BUTTONS ===== */
@@ -141,14 +139,15 @@ p {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--accent), var(--accent-hover));
+  background: var(--text-main);
   color: #fff;
-  box-shadow: 0 4px 15px rgba(79, 70, 229, 0.3);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   border: none;
 }
 
 .btn-primary:hover {
-  box-shadow: 0 6px 20px rgba(79, 70, 229, 0.4);
+  background: #F97316;
+  box-shadow: 0 6px 20px rgba(249, 115, 22, 0.4);
   transform: translateY(-2px);
   color: #fff;
 }
@@ -160,8 +159,9 @@ p {
 }
 
 .btn-outline:hover {
-  border-color: var(--accent);
-  color: var(--accent);
+  border-color: #F97316;
+  background: #F97316;
+  color: #fff;
   transform: translateY(-2px);
 }
 
@@ -225,7 +225,7 @@ p {
 .greeting {
   font-family: 'Outfit', sans-serif;
   font-weight: 600;
-  color: var(--accent-alt);
+  color: var(--text-muted);
   margin-bottom: 0.5rem;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -236,10 +236,7 @@ p {
   font-size: 4.5rem;
   letter-spacing: -2px;
   margin-bottom: 1.5rem;
-  background: linear-gradient(135deg, var(--accent), var(--accent-cyan));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: inline-block;
+  color: var(--text-main);
 }
 
 .hero .tagline {
@@ -367,7 +364,7 @@ p {
 .timeline-date {
   font-family: 'Outfit', sans-serif;
   font-weight: 600;
-  color: var(--accent-alt);
+  color: var(--text-main);
   font-size: 0.95rem;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -541,13 +538,13 @@ p {
 footer {
   padding: 3rem 5%;
   text-align: center;
-  border-top: 1px solid var(--border);
-  background: var(--bg);
+  border-top: 1px solid #222;
+  background: #000000;
 }
 
 .footer-content p {
   font-size: 0.9rem;
-  color: var(--text-light);
+  color: #888888;
 }
 
 /* ===== ANIMATIONS ===== */
